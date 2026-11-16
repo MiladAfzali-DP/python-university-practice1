@@ -1,4 +1,4 @@
-# 🐍 Python Mini Apps
+# 🐍 Milad's Mini Apps
 
 A collection of simple and interactive Python terminal applications, built to practice programming fundamentals, algorithms, loops, functions, and user input handling.
 
