@@ -3,9 +3,9 @@
 # 0. Utility Functions
 # -----------------------------------
 
-def printChar(inputChar):
+def printChar(inputChar, maxChar):
   print("||", end=" ")
-  print((inputChar + ' ') * 8, end="")
+  print((inputChar + ' ') * maxChar, end="")
   print("||", end="\n")
 
 def pause():
@@ -57,8 +57,8 @@ def shapeGeneratorApp():
     try:
         size = int(input("Enter the shape size: "))
 
-        if size <= 0:
-            print("Size must be greater than zero.")
+        if size <= 2:
+            print("Size must be greater than 2.")
             pause()
             return
 
@@ -72,9 +72,9 @@ def shapeGeneratorApp():
 
     for i in range(size):
       if(i == 0 or i == size - 1 or i % 3 == 0):
-          printChar('—')
+          printChar('—', size)
       else:
-          printChar('*')
+          printChar('*', size)
 
     # Triangle
     print("\nTriangle:")
